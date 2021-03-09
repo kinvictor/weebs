@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -9,6 +9,26 @@ body {
     margin: 0;
     font-size: 1rem;
 }
+
+.container {
+    height: 90vh;
+    width: 90vw;
+    /* overflow: hidden; */
+}
+
+button {
+    padding: 10px;    
+    border-radius: 18px;
+    font-weight: 700;
+    background: black;
+    color: white;
+}
+
+.master-title {
+    font-size: 1.2rem;
+}
+
+/* NAVBAR */
 
 .master-nav {
     display: flex;
@@ -20,6 +40,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    box-shadow: 0px 8px 10px 1px rgba(0,0,0,0.23);
 }
 
 .master-nav .logo-nav {
@@ -52,13 +73,51 @@ body {
     display: none;
 }
 
-
-
 .ham-nav .fa-times,
 .ham-nav .fa-bars {
     transition: display 1s;
     /* animation: fadein 1s infinite; */
 }
+
+/* END NAVBAR */
+
+
+/* HERO */
+.master-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 70px;
+    width: 100%;
+    place-items: center;
+
+}
+
+.text-hero p{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.text-hero button {
+    width: 30%;
+}
+
+.img-hero {
+    margin-right: 20px;
+}
+
+.img-hero img {
+    width: 100%;
+} 
+
+/* END HERO */
+.master-bnfit {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    place-items: center;
+}
+/* BENEFIT */
+
+/* END BENEFIT */
+
 
 /* @keyframes fadein {
     0% {
