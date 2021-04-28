@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  border: 1px solid red;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.master-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #FF6DC5;
+}
+
+.master-nav img {
+  width: 50px;
+}
+
+.master-nav .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.master-nav .menu-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.master-boomer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.master-boomer .one-boomer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.master-boomer .one-boomer .text-boomer {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.master-boomer .one-boomer .btn-boomer {
+  background: gray;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.master-boomer .two-boomer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.master-boomer .two-boomer img {
+  width: 90%;
+}
+/*# sourceMappingURL=style.css.map */

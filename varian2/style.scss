@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+$base: rgb(250, 250, 250);
+$text : black;
+$highlight: #FF6DC5;
+
+@mixin flexw($width:center) {
+    display: flex;
+    justify-content: $width;
+}
+
+@mixin flexh($height:center) {
+    display: flex;
+    align-items: $height;
+}
+
+@mixin btn($bg: gray, $text: black){
+    background: $bg;
+    color: $text;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+* {
+    border: 1px solid red;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.master-nav {
+    @include flexw(space-around);
+    background: $highlight;
+    img {
+        width: 50px;
+    }
+    .menu-nav {
+        @include flexh();
+        gap: 20px;
+        a {
+            text-decoration: none;
+            color: $text;
+        }
+    }
+}
+
+
+.master-boomer {
+    @include flexw(space-around);
+    .one-boomer {
+        @include flexw();
+        flex-direction: column;
+        .text-boomer {
+            font-size: 3rem;
+            font-weight: bold
+        }
+        .btn-boomer {
+            @include btn()
+        }
+    }
+    .two-boomer {
+        @include flexh();
+        img {
+            width: 90%;
+        }
+    }
+
+}
