@@ -13,6 +13,16 @@ body {
 .section {
   width: 100vw;
   height: 100vh;
+  padding: 10px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .master-nav {
@@ -21,9 +31,9 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 10px 0;
   background: #FF6DC5;
+  width: 100vw;
 }
 
 .master-nav img {
@@ -79,8 +89,8 @@ body {
   text-decoration: none;
   font-size: 1rem;
   border: 0px;
-  -webkit-box-shadow: 0px 10px 13px -7px #0000005e;
-          box-shadow: 0px 10px 13px -7px #0000005e;
+  -webkit-box-shadow: 0px 10px 13px -8px #0000005e;
+          box-shadow: 0px 10px 13px -8px #0000005e;
   width: 20%;
 }
 
@@ -110,14 +120,14 @@ body {
   gap: 30px;
 }
 
-.master-mini .one-mini {
+.master-mini .one-mini, .master-mini .two-mini, .master-mini .three-mini {
   background: #c1ffc1;
   width: 28vw;
   border-radius: 20px;
   padding: 25px;
 }
 
-.master-mini .one-mini .icon-mini {
+.master-mini .one-mini .icon-mini, .master-mini .two-mini .icon-mini, .master-mini .three-mini .icon-mini {
   background: white;
   width: 80px;
   height: 80px;
@@ -133,9 +143,12 @@ body {
           align-items: center;
 }
 
-.subtitle {
-  font-weight: bold;
-  font-size: 1.3rem;
+.master-mini .two-mini {
+  background: plum;
+}
+
+.master-mini .three-mini {
+  background: lightblue;
 }
 
 .master-benefit {
@@ -156,16 +169,11 @@ body {
 
 .master-benefit .content-benefit {
   padding: 0 20px 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr 1fr .5fr;
+      grid-template-columns: .5fr 1fr .5fr;
+  place-items: center;
 }
 
 .master-benefit .content-benefit .one-benefit, .master-benefit .content-benefit .three-benefit {
@@ -179,6 +187,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,9 +28,8 @@ $highlight: #FF6DC5;
     text-decoration: none;
     font-size: 1rem;
     border: 0px;
-    box-shadow: 0px 10px 13px -7px #0000005e;
+    box-shadow: 0px 10px 13px -8px #0000005e;
 }
-
 
 * {
     // border: 1px solid red;
@@ -46,13 +45,23 @@ body {
 .section {
     width: 100vw;
     height: 100vh;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .master-nav {
     @include flexw(space-around);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
     background: $highlight;
+    width: 100vw;
     img {
         width: 50px;
     }
@@ -74,7 +83,7 @@ body {
         flex-direction: column;
         .text-boomer {
             font-size: 3rem;
-            font-weight: bold
+            font-weight: bold;
         }
         .btn-boomer {
             @include btn();
@@ -94,7 +103,7 @@ body {
 .master-mini {
     @include flexw();
     gap: 30px;
-    .one-mini {
+    .one-mini, .two-mini, .three-mini {
         background: #c1ffc1;
         width: 28vw;
         border-radius: 20px;
@@ -107,26 +116,46 @@ body {
             @include flexdual()
         }
     }
+    .two-mini {
+        background: plum;
+    }
+    .three-mini {
+        background: lightblue;
+    }
 }
 
-.subtitle {
-    font-weight: bold;
-    font-size: 1.3rem;
-}
+
 
 .master-benefit {
     @include flexdual();
     flex-direction: column;
     .content-benefit {
         padding: 0 20px 0 20px;
-        @include flexdual();   
-        gap: 20px;
-
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+        place-items: center;
         .one-benefit, .three-benefit {
             @include flexw();
             flex-direction: column;
-            gap: 30px;
+            gap: 50px;
         }
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// will be applied on screen lower than 800px
+@media (max-width: 800px) {
+    
 }
