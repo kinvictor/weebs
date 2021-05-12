@@ -13,7 +13,7 @@ body {
 .section {
   width: 100vw;
   height: 100vh;
-  padding: 10px;
+  padding: 20px;
 }
 
 .title {
@@ -22,7 +22,7 @@ body {
 
 .subtitle {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .master-nav {
@@ -91,7 +91,6 @@ body {
   border: 0px;
   -webkit-box-shadow: 0px 10px 13px -8px #0000005e;
           box-shadow: 0px 10px 13px -8px #0000005e;
-  width: 20%;
 }
 
 .master-boomer .two-boomer {
@@ -188,5 +187,55 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
+}
+
+.master-plans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.master-plans .content-plans {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.3fr 1fr;
+      grid-template-columns: 1fr 1.3fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.master-plans .content-plans .one-plan, .master-plans .content-plans .two-plan, .master-plans .content-plans .three-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 55vh;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.master-plans .content-plans .one-plan .price, .master-plans .content-plans .two-plan .price, .master-plans .content-plans .three-plan .price {
+  font-size: 2rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

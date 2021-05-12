@@ -45,7 +45,7 @@ body {
 .section {
     width: 100vw;
     height: 100vh;
-    padding: 10px;
+    padding: 20px;
 }
 
 .title {
@@ -54,7 +54,7 @@ body {
 
 .subtitle {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .master-nav {
@@ -87,9 +87,10 @@ body {
         }
         .btn-boomer {
             @include btn();
-            width: 20%;
+
         }
     }
+
     .two-boomer {
         @include flexdual();
         img {
@@ -145,7 +146,28 @@ body {
 
 
 
-
+.master-plans {
+    @include flexdual();
+    flex-direction: column;
+    .content-plans {
+        // @include flexw();
+        display: grid;
+        grid-template-columns: 1fr 1.3fr 1fr;
+        column-gap: 50px;
+        .one-plan, .two-plan,.three-plan {
+            @include flexdual();
+            flex-direction: column;
+            height: 55vh;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 30px;
+            .price {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
 
 
 
