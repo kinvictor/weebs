@@ -203,6 +203,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#eeaeca), to(#94bbe9));
+  background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
 }
 
 .master-plans .content-plans {
@@ -230,12 +232,21 @@ body {
           flex-direction: column;
   height: 55vh;
   padding: 20px;
-  border: 3px solid black;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.2) 0%, rgba(236, 236, 236, 0.7) 100%);
+  border: 3px solid #ffffff8c;
   border-radius: 30px;
 }
 
 .master-plans .content-plans .one-plan .price, .master-plans .content-plans .two-plan .price, .master-plans .content-plans .three-plan .price {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.master-plans .content-plans .best {
+  font-size: 1.3rem;
+}
+
+.master-plans .content-plans .best .price {
+  font-size: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

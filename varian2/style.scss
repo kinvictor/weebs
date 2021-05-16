@@ -149,9 +149,10 @@ body {
 .master-plans {
     @include flexdual();
     flex-direction: column;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
     .content-plans {
         // @include flexw();
-        display: grid;
+        display: grid; 
         grid-template-columns: 1fr 1.3fr 1fr;
         column-gap: 50px;
         .one-plan, .two-plan,.three-plan {
@@ -159,11 +160,19 @@ body {
             flex-direction: column;
             height: 55vh;
             padding: 20px;
-            border: 3px solid black;
+
+            background: linear-gradient(150deg, rgba(255,255,255,0.20) 0%, rgba(236,236,236,0.70) 100%); 
+            border: 3px solid #ffffff8c;
             border-radius: 30px;
             .price {
                 font-size: 2rem;
                 font-weight: bold;
+            }
+        }
+        .best {
+            font-size: 1.3rem;
+            .price {
+                font-size: 3rem;
             }
         }
     }
