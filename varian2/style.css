@@ -249,4 +249,50 @@ body {
 .master-plans .content-plans .best .price {
   font-size: 3rem;
 }
+
+.master-testi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#94bbe9), to(#eeaeca));
+  background: linear-gradient(90deg, #94bbe9 0%, #eeaeca 100%);
+}
+
+.master-testi .content-testi .testi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  padding: 30px;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.2) 0%, rgba(236, 236, 236, 0.7) 100%);
+  border: 3px solid #ffffff8c;
+  border-radius: 30px;
+}
+
+.master-testi .content-testi .testi img {
+  width: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.master-testi .content-testi .testi .text-testi {
+  max-width: 500px;
+}
 /*# sourceMappingURL=style.css.map */

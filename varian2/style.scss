@@ -180,7 +180,30 @@ body {
 
 
 
+.master-testi {
+    @include flexdual();
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%); 
+    .content-testi {
+        .testi {
+            @include flexdual();
+            gap: 50px;
 
+            padding: 30px;
+            background: linear-gradient(150deg, rgba(255,255,255,0.20) 0%, rgba(236,236,236,0.70) 100%); 
+            border: 3px solid #ffffff8c;
+            border-radius: 30px;
+            img {
+                width: 150px;
+                border-radius: 50%;
+                box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+            }
+            .text-testi {
+                max-width: 500px;
+            }
+        }
+    }
+}
 
 
 
