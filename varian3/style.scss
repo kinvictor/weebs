@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+$base: rgb(250, 250, 250);
+$text : black;
+$highlight: #FF6DC5;
+
+@mixin flexw($width:center) {
+    display: flex;
+    justify-content: $width;
+}
+
+@mixin flexh($height:center) {
+    display: flex;
+    align-items: $height;
+}
+
+@mixin flexdual($width:center, $height:center){
+    display: flex;
+    justify-content: $width;
+    align-items: $height;
+}
+
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+.section {
+    height: 90vh;
+}
+
+.m-nav {
+    @include flexdual(space-between);
+    padding: 20px 0 20px 0;
+    .nav-menu {
+        @include flexdual();
+        gap: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.m-hero {
+    @include flexh();
+    width: 100%;
+    .hero-txt {
+        @include flexw();
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-img {
+        width: 35vw;
+        @include flexdual();
+        img {
+            width: 90%;
+        }
+    }
+}
+
+.m-services {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    .services-txt {
+        @include flexw();
+        flex-direction: column;
+    }
+    .svecial {
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+    .services-blocc {
+        @include flexdual();
+        flex-direction: column;
+        gap: 50px;
+        .services-b {
+            width: 15vw;
+            padding: 10px;
+            @include flexdual();
+            flex-direction: column;
+            gap: 5px;
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
